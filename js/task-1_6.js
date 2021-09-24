@@ -24,4 +24,3 @@ while (true) {
 }
 
 alert(`Сума чисел: ${total}`);
-console.log('Haloow');
