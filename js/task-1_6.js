@@ -2,28 +2,26 @@ let total = 0;
 // let userInput;
 
 while (true) {
-    let userInput = prompt('Введіть число для сумування')
+  let userInput = prompt('Введіть число для сумування');
 
-    if (userInput === null) {
-        console.log('Відмінего користувачем!');
-        break;
-    }
+  if (userInput === null) {
+    // console.log('Відмінено корестувачем');
+    break;
+  }
 
-    userInput = Number(userInput);
+  userInput = Number(userInput);
 
-    const notANumber = Number.isNaN(userInput);
+  const notANumber = Number.isNaN(userInput);
 
-    if(notANumber) {
-        console.log('Було введено не число, пропускаємо цю ітерацію!');
-        continue;
-    }
+  if (notANumber) {
+    console.log('Було введено не число, пропускаємо цю ітерацію!');
+    continue;
+  }
 
-    total += userInput;
+  total += userInput;
 
-    console.log(userInput)
-    console.log(total)
-} 
+  console.log(total);
+}
 
- alert(`Загальна сума чисел дорівнює ${total}`);
-
- 
+alert(`Сума чисел: ${total}`);
+console.log('Haloow');

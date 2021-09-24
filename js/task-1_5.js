@@ -1,35 +1,31 @@
 let countryDelivery = prompt('В яку країну доставить товар?');
-let price
- 
-if (countryDelivery === null) {
-    alert('Скасовано користувачем!');
-}
+let price;
+
 countryDelivery = countryDelivery.toLowerCase();
-console.log(countryDelivery);
 
 switch (countryDelivery) {
-    case 'китай':
-        price = 100;
-        break;
+  case 'китай':
+    price = 100;
+    break;
 
-    case 'чилі':
-        price = 250;
-        break;
+  case 'чили':
+    price = 250;
+    break;
 
-    case 'австралія':
-        price = 170;
-        break;
+  case 'австралия':
+    price = 170;
+    break;
 
-    case 'індія':
-        price = 80;
-        break;
+  case 'индия':
+    price = 80;
+    break;
 
-    case 'ямайка':
-        price = 120;
-        break;
-    
-    default:
-        alert('У вашій країні доставка не доступна.');
+  case 'ямайка':
+    price = 120;
+    break;
+
+  default:
+    alert('В вашей стране доставка не доступна');
 }
 
-console.log(`Доставка в ${countryDelivery} буде коштувати ${price} кредитів`)
+console.log(`Доставка в ${countryDelivery} будет стоить ${price} кредитов.`);
